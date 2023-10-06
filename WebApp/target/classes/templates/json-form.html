@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Form</title>
+</head>
+<body>
+    <h1>JSON Data Input</h1>
+    <form action="/json/process" method="post">
+        <label for="jsonData">Enter JSON Data:</label>
+        <br>
+        <textarea id="jsonData" name="jsonData" rows="4" cols="50" required></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <h2>Stored JSON Data</h2>
+    <pre>
+        <!-- Display stored JSON data from the Java class -->
+        ${jsonData.jsonData}
+    </pre>
+</body>
+</html>
